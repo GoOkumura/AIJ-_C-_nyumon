@@ -8,7 +8,7 @@
             "name": "(lldb) 接続",
             "type": "cppdbg",
             "request": "attach",
-            "program": "/Users/gookumura/workspaces/c++/C++_nyuumon/1_kihonkouzou.cpp",
+            "program": "/Users/gookumura/workspaces/c++/C++_nyuumon/AIJ_C++.cpp",
             "processId": "${command:pickProcess}",
             "MIMode": "lldb"
         },
@@ -16,7 +16,7 @@
             "name": "(lldb) 起動",
             "type": "cppdbg",
             "request": "launch",
-            "program": "/Users/gookumura/workspaces/c++/C++_nyuumon/1_kihonkouzou.cpp",
+            "program": "/Users/gookumura/workspaces/c++/C++_nyuumon/AIJ_C++.cpp",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
