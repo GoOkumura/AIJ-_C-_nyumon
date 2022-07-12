@@ -473,3 +473,25 @@
 //     return 0;
 // }
 
+// 7.6 演算子の優先度と結合法則
+// 算術演算と比較演算の優先度
+#include<iostream>
+using namespace std;
+
+int main(){
+  int a = 3, b = 2, c = 13, d = 6;
+
+  bool result = a + b < c -d;
+  // bool result =((a + b) < (c - d));と同じ。
+
+  cout << result << "\n";  // 1
+
+  printf("単項演算子 ++ -- - ! \n");
+  printf("算術演算子 * / % + - 左結合 \n");
+  printf("関係演算子 < > <= >= 左結合 \n");
+  printf("等価演算子 == != 左結合 \n");
+  printf("論理演算子 && || 左結合 \n");
+  printf("代入演算子 = += -= *= /= 右結合 \n");
+
+  return 0;
+}
