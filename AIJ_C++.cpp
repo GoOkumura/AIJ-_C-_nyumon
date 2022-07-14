@@ -607,3 +607,57 @@
 //   return 0;
 
 // }
+
+// // B: Range 104
+// // ３つの整数値a,b,cを読み込み、それらがa<b<Cの条件を満たすならばYesを、
+// // 満たさないならばNoを出力するプログラムを作成する。
+// #include<iostream>
+// using namespace std;
+// int main(){
+//   int a, b, c;
+//   cin >> a >> b >> c;
+
+//   if (a < b && b < c) cout << "Yes" << endl;
+//   else cout << "No" << endl;
+
+//   return 0;
+
+// }
+
+// // C: Sorting Three Numbers 105 
+// // 3つの整数を読み込み、それらを値が小さい順に並べて出力するプログラムを作成
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//   int a, b, c, t;
+//   cin >> a >> b >> c;
+
+//   if (a > b) {t = a; a = b; b = t;}
+//   if (b > c) {t = b; b = c; c = t;}
+//   if (a > b) {t = a; a = b; b = t;}
+
+//   cout << a << " " << b << " " << c << endl;
+
+//   return 0;
+// }
+
+// // D: Circle in a Rectangle 106
+// // 長方形の中に縁が含まれるかを判定するプログラムを作成する
+// // 長方形は左下の頂点を原点とし、右上の頂点の座標(W,H)が与えられる
+// // また、縁はその中心の座標(x,y)と半径rで与えられる
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//   int W, H, x, y, r;
+//   cin >> W >> H >> x >> y >> r;
+
+//   if (0 <= x - r && x + r <= W && 0 <= y -r && y + r <= H){
+//     cout << "Yes" << endl;
+//   } else {
+//     cout << "No" << endl;
+//   }
+
+//   return 0;
+// }
