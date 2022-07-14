@@ -539,19 +539,71 @@
 //   return 0;
 // }
 
-// 8.1.2 if-else文
-#include<iostream>
-using namespace std;
+// // 8.1.2 if-else文
+// #include<iostream>
+// using namespace std;
 
-int main(){
-  int a;
-  cin >> a;
+// int main(){
+//   int a;
+//   cin >> a;
 
-  if (a % 2 == 0){
-    cout << a << "is an even number." << endl;
-  } else {
-    cout << a << "is an odd number." << endl;
-  }
+//   if (a % 2 == 0){
+//     cout << a << "is an even number." << endl;
+//   } else {
+//     cout << a << "is an odd number." << endl;
+//   }
 
-  return 0;
-}
+//   return 0;
+// }
+
+// // 8.1.3 if-else,if-else文
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//   int day;
+//   cin >> day;
+
+//   if ( day == 0) cout << "Sunday" << endl;
+//   else if (day == 1) cout << "Monday" << endl;
+//   else if (day == 2) cout << "Tuesday" << endl;
+//   else if (day == 3) cout << "Wednesday" << endl;
+//   else if (day == 4) cout << "Thursday" << endl;
+//   else if (day == 5) cout << "Friday" << endl;
+//   else if (day == 6) cout << "Saturday" << endl;
+//   else cout << "Invalid Input!" << endl;
+
+//   return 0;
+// }
+
+// //8.1.4 三項演算子
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//   int x, y, maxv;
+//   cin >> x >> y;
+
+//   maxv = (x > y)?x:y;
+
+//   cout << maxv << endl;
+
+//   return 0;
+// }
+
+// // 8.2 演習問題 A: Small Large, or Equal
+// // 2つの整数a, bを読み込んで、aとbの大小関係を出力するプログラムを作成する
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//   int a, b, maxv;
+//   cin >> a >> b;
+
+//   if (a < b) cout << "a < b" << endl;
+//   else if (a > b) cout << "a > b" << endl;
+//   else if (a == b) cout << "a == b" << endl;
+
+//   return 0;
+
+// }
