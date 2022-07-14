@@ -4,7 +4,8 @@
             "name": "Mac",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/local/Cellar/gcc/11.3.0_2/include/c++/11/tr1"
+                "/usr/local/Cellar/gcc/11.3.0_2/include/c++/11/tr1",
+                "/Users/gookumura/workspaces/c++/AIJ-_C-_nyumon"
             ],
             "defines": [],
             "macFrameworkPath": [],

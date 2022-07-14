@@ -1,19 +1,15 @@
 {
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        {
-            "name": "(lldb) 接続",
-            "type": "cppdbg",
-            "request": "attach",
-            "program": "/Users/gookumura/workspaces/c++/C++_nyuumon/AIJ_C++",
-            "processId": "${command:pickProcess}",
-            "MIMode": "lldb"
-        },
+
         {
             "name": "(lldb) 起動",
             "type": "cppdbg",
             "request": "launch",
-            "program": "/Users/gookumura/workspaces/c++/C++_nyuumon/AIJ_C++",
+            "program": "/Users/gookumura/workspaces/c++/AIJ-_C-_nyumon/",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
@@ -22,17 +18,13 @@
             "MIMode": "lldb"
         },
         {
-            "name": "C/C++: cpp アクティブ ファイルのビルドとデバッグ",
+
+            "name": "(lldb) 接続",
             "type": "cppdbg",
-            "request": "launch",
+            "request": "attach",
             "program": "/Users/gookumura/workspaces/c++/AIJ-_C-_nyumon/AIJ_C++.cpp",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "lldb",
-            "preLaunchTask": "C/C++: cpp アクティブなファイルのビルド"
+            "processId": "${command:pickProcess}",
+            "MIMode": "lldb"
         }
     ]
 }

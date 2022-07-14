@@ -514,20 +514,44 @@
 // }
 
 
-// 8 構造文:条件分岐
+// // 8 構造文:条件分岐
 
-// 8.1 条件分岐
-// 8.1.1 if文
+// // 8.1 条件分岐
+// // 8.1.1 if文
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//   int x;
+//   cin >> x;
+
+//   // if ( 条件式 ) 文;
+//   // または
+//   // if ( 条件式 ) {
+//     //
+//     // 処理
+//     //
+//   // };
+//   if (x < 0) x *= -1; // xが0より小さい場合に-1をかける
+
+//   cout << x << endl;
+
+//   return 0;
+// }
+
+// 8.1.2 if-else文
 #include<iostream>
 using namespace std;
 
 int main(){
-  int x;
-  cin >> x;
+  int a;
+  cin >> a;
 
-  if (x < 0) x *= -1; // xが0より小さい場合に-1をかける
-
-  cout << x << endl;
+  if (a % 2 == 0){
+    cout << a << "is an even number." << endl;
+  } else {
+    cout << a << "is an odd number." << endl;
+  }
 
   return 0;
 }
