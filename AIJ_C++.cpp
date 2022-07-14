@@ -339,7 +339,7 @@
 // int main(){
 //     int a, b;
 //     a = 1;
-//     b = a ++ ;
+//     b = a++ ;
 //     cout << "a -> " << a << " , ";
 //     cout << "b -> " << b << endl;
 //     a = 1;
@@ -660,4 +660,93 @@
 //   }
 
 //   return 0;
+// }
+
+
+// // 9. 構造文：繰り返し処
+// // 9.1 繰り返し処理
+// // 9.1.1 whileループ
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cin >> n;
+//     int i = 1;
+//     int sum = 0;
+
+//     while (i <= n) { // iがn以下の間、繰り返す
+//         sum += i;
+//         i++;
+//     }
+
+//     cout << sum << endl;
+
+//     return 0;
+// }
+
+// // 9.1.2 forループ
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cin >> n;
+
+//     for (int i = 0; i < n; i++){
+//         cout << i << " ";
+//     }
+//     cout << endl;
+
+//     return 0;
+// }
+
+// // 9.2 演習問題(1)
+// // A : Print Many HelloWorld
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     for (int i = 0; i < 1000; i++) {
+//         cout << "Hello World" << endl; 
+//     }
+//     return 0;
+// }
+
+// // 9.3 繰り返し処理の制御
+// // 9.3.1 break文
+// // 9.3 1からnまでの整数を出力する(制限付き)
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n, limit = 10, i = 1;
+
+//     cin >> n;
+
+//     while(i <= n){
+//         if (limit < i) break;
+//         cout << i++ << " ";
+//     }
+//     cout << endl;
+
+//     return 0;
+// }
+
+// // 9.4 1からnまでの整数を出力する(制限付き)
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n, limit = 10, i;
+
+//     cin >> n;
+
+//     for (i = 1; i <= n; i++){
+//         if (limit < i) break; // iがlimitを超えたら強制終了
+//         cout << i << " ";
+//     }
+//     cout << "[" << i << "]" << endl;
+
+//     return 0;
 // }
