@@ -473,25 +473,61 @@
 //     return 0;
 // }
 
-// 7.6 演算子の優先度と結合法則
-// 算術演算と比較演算の優先度
+// // 7.6 演算子の優先度と結合法則
+// // 算術演算と比較演算の優先度
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//   int a = 3, b = 2, c = 13, d = 6;
+
+//   bool result = a + b < c -d;
+//   // bool result =((a + b) < (c - d));と同じ。
+
+//   cout << result << "\n";  // 1
+
+//   printf("単項演算子 ++ -- - ! \n");
+//   printf("算術演算子 * / % + - 左結合 \n");
+//   printf("関係演算子 < > <= >= 左結合 \n");
+//   printf("等価演算子 == != 左結合 \n");
+//   printf("論理演算子 && || 左結合 \n");
+//   printf("代入演算子 = += -= *= /= 右結合 \n");
+
+//   return 0;
+// }
+
+// // 7.7 演習問題
+// // D:Watch
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//   int h, m, s;
+//   cin >> s >> s;
+
+//   h = s / 3600; s %= 3600;
+//   m = s /60; s %= 60;
+
+//   cout << h << ":" << m << ":" << s << endl;
+
+//   return 0;
+// }
+
+
+// 8 構造文:条件分岐
+
+// 8.1 条件分岐
+// 8.1.1 if文
 #include<iostream>
 using namespace std;
 
 int main(){
-  int a = 3, b = 2, c = 13, d = 6;
+  int x;
+  cin >> x;
 
-  bool result = a + b < c -d;
-  // bool result =((a + b) < (c - d));と同じ。
+  if (x < 0) x *= -1; // xが0より小さい場合に-1をかける
 
-  cout << result << "\n";  // 1
-
-  printf("単項演算子 ++ -- - ! \n");
-  printf("算術演算子 * / % + - 左結合 \n");
-  printf("関係演算子 < > <= >= 左結合 \n");
-  printf("等価演算子 == != 左結合 \n");
-  printf("論理演算子 && || 左結合 \n");
-  printf("代入演算子 = += -= *= /= 右結合 \n");
+  cout << x << endl;
 
   return 0;
 }
