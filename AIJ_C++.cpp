@@ -750,3 +750,48 @@
 
 //     return 0;
 // }
+
+// // 9.5 無限ループ
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int x;
+//     while(1){
+//         cin >> x;
+//         if (x == 0) break;
+//         cout << x << endl;
+//     }
+//     return 0;
+// }
+
+// // 9.3.2 continue文
+// // 9.6 : 3の倍数を無視する
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int i = -1;
+//     while (++i <= 10){
+//         if (i % 3 == 0)continue;
+//         cout << i << " ";
+//     }
+//     cout << endl;
+
+//     return 0;
+// }
+
+// 9.7 : ３の倍数を無視する
+#include<iostream>
+using namespace std;
+
+int main(){
+    for (int i = 0; i <= 10; i++){
+        if (i %3 == 0) continue;
+        cout << i << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
+
