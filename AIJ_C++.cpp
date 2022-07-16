@@ -781,17 +781,43 @@
 //     return 0;
 // }
 
-// 9.7 : ３の倍数を無視する
-#include<iostream>
-using namespace std;
+// // 9.7 : ３の倍数を無視する
+// #include<iostream>
+// using namespace std;
 
-int main(){
-    for (int i = 0; i <= 10; i++){
-        if (i %3 == 0) continue;
-        cout << i << " ";
-    }
-    cout << endl;
+// int main(){
+//     for (int i = 0; i <= 10; i++){
+//         if (i %3 == 0) continue;
+//         cout << i << " ";
+//     }
+//     cout << endl;
 
-    return 0;
-}
+//     return 0;
+// }
 
+//     return 0;
+// }
+// 9.2.3 return文
+// 9.8 2つの整数の割算 "エラー未解決"
+// #include<iostream>
+// using namespace std;
+
+// int div(int x, int y){
+//     if (y == 0){
+//         cout << "division by zero." << endl;
+//         return -1;
+//     }
+
+//     return x / y;
+// }
+// int main(){
+//     int x, y;
+//     cin >> x >> y;
+
+//     cout << div(x, y) << endl;
+
+//     return 0;
+// }
+
+// 9.4 演習問題(2)
+// B : print Test Cases
