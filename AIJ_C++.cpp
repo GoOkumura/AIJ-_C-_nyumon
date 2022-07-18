@@ -819,5 +819,54 @@
 //     return 0;
 // }
 
-// 9.4 演習問題(2)
-// B : print Test Cases
+// // 9.4 演習問題(2)
+// // B : print Test Cases
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     for (int x, t = 1; ; t++){ // for文でのからの条件は、常にtrueと見做される
+//         cin >> x;
+//         if ( x == 0) break;
+//         cout << "Case " << t << ": " << x << endl;
+//     }
+//     return 0;
+// }
+
+// // C : Swapping Two Nunbers 121
+// #include<iostream>
+// using namespace std;
+
+// int main() {
+//     int x, y;
+
+//     while(1){
+//         cin >> x >> y;
+//         if (x == 0 && y == 0) break;
+
+//         if (x < y){
+//             cout << x << " " << y << endl;
+//         } else {
+//             cout << y << " " << x << endl;
+//         }
+//     }
+
+//         return 0;
+// }
+
+// // // D : How Many Divisors? 122
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int a, b, c, f = 0;
+//     cin >> a >> b >> c;
+
+//     for (int x = a; x <= b; x++){
+//         if ( c % x == 0) f++;
+//     }
+
+//     cout << f << endl;
+
+//     return 0;
+// }
