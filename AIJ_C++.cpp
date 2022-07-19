@@ -953,5 +953,67 @@
 //     return 0;
 // }
 
-// 10.2.3 キャスト演算
-// 10.5 : キャスト演算
+// // 10.2.3 キャスト演算
+// // 10.5 : キャスト演算
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     double L = 1.5;
+//     double R = 1.8;
+    
+//     int val1 = L + R;
+//     int val2 = (int)L + (int)R;
+
+//     cout << val1 << endl;
+//     cout << val2 << endl;
+
+//     return 0;
+// }
+
+// // 10.3 ポインタ
+// // 10.6 ポインタの宣言と変数
+// #include<cstdio>
+
+// int main(){
+//     int x, y;
+//     int *p; // 整数型変数を指すポインタ変数pの宣言
+
+//     // アドレス演算子＆で変数xのアドレスを取得しポインタ変数pに代入
+//     p = &x;
+//     // ポインタ変数の中身であるアドレスを出力
+//     printf("%p\n", p); 
+
+//     // 間接演算子*でポインタpが指し示すものを参照
+//     *p = 8;
+//     // 間接演算子*でポインタpが指し示すものを参照
+//     y = *p + x;
+
+//     printf("%d\n", y);
+
+//     return 0;
+// }
+
+// // 10.7 : 2つの変数の中身を入れ替える
+// #include<iostream>
+// using namespace std;
+
+// void swap1(int x, int y){
+//     int t =x; x = y; y =t;
+// }
+// void swap2(int *X, int *Y){
+//     int t = *X; *X = *Y; *Y = t;
+// }
+
+// int main(){
+//     int a, b;
+//     int *A = &a, *B = &b;
+//     cin >> a >> b;
+
+//     swap1(a, b);
+//     cout << a << " " << b << "\n";
+//     swap2(A, B);
+//     cout << a << " " << b << "\n";
+
+//     return 0;
+// }
