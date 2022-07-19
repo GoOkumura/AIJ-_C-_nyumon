@@ -1017,3 +1017,80 @@
 
 //     return 0;
 // }
+
+// // 10.4 演習問題
+// // A : A/B_Problem 133
+// #include<iostream>
+// #include<stdio.h>
+// using namespace std;
+
+// int main(){
+
+//     int a, b;
+//     cin >> a >> b;
+
+//     printf("%d %d %lf\n", a/b, a%b, (double)a/b);
+
+//     return 0;
+// }
+
+// // B : Circle 134
+// #include<iostream>
+// #include<stdio.h>
+// using namespace std;
+
+// int main(){
+//     double PI = 3.1415926535589;
+//     double r;
+//     cin >> r;
+
+//     printf("%lf %lf\n", PI*r*r, 2*PI*r);
+
+//     return 0;
+// }
+
+// // C : Simple Calculator 135
+// #include<iostream>
+// #include<stdio.h>
+// using namespace std;
+
+// int main(){
+//     int a, b;
+//     char op;
+
+//     while(1){;
+//     cin >> a >> op >> b;
+//     if ( op == '?') break;
+//     if ( op == '+') cout << a + b << endl;
+//     else if ( op == '-') cout << a - b << endl;
+//     else if ( op == '*') cout << a * b << endl;
+//     else if ( op == '/') cout << a / b << endl;
+//     }
+
+//     return 0;
+// }
+
+// D : Min,Max and Sum 136
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     long long a;
+//     long long minValue = 1000000;
+//     long long maxValue = -1000000;
+//     long long sum = 0;
+
+//     cin >> n;
+
+//     for (int i = 0; i < n; i++){
+//         cin >> a;
+//         if ( a < minValue) minValue = a;
+//         if ( a > maxValue) maxValue = a;
+//         sum += a;
+//     }
+
+//     cout << minValue << " " << maxValue << " " << sum << endl;
+
+//     return 0;
+// }
