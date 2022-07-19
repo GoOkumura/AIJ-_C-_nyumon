@@ -898,23 +898,60 @@
 //     return 0;
 // }
 
-// 表 10.1 : 型の表現範囲
-#include<iostream>
-using namespace std;
+// // 表 10.1 : 型の表現範囲
+// #include<iostream>
+// using namespace std;
 
-int main(){
-    printf("10.1 : 型の表現範囲");
-    printf("short : 整数 : -32768~32767");
-    printf("int : 整数 : -2147483648~2147483647");
-    printf("long : 整数 : -2147483648~2147483647");
-    printf("long long : 整数 : -9223372036854775808~923372036854775807");
-    printf("bool : ブール値 : trueまたはfalse");
-    printf("float : 実数 : +-3.4*10(-38乗)~+-3.4*10(38乗)");
-    printf("double : 実数 : +-1.7*10(-308乗)~+=1.7*10(308乗)");
-    printf("char : 文字 : -127~127");
-    printf("演算において、型が表現できる値の上限を超えてしまうことをオーバーフローという。\n");
-    printf("プログラムを作成するときは、最終的な計算結果のみではなく、\n");
-    printf("式の評価の途中でオーバーフローなどが起こらないかを十分検討して\n各変数の型を決める必要がある。\n");
+// int main(){
+//     printf("10.1 : 型の表現範囲");
+//     printf("short : 整数 : -32768~32767");
+//     printf("int : 整数 : -2147483648~2147483647");
+//     printf("long : 整数 : -2147483648~2147483647");
+//     printf("long long : 整数 : -9223372036854775808~923372036854775807");
+//     printf("bool : ブール値 : trueまたはfalse");
+//     printf("float : 実数 : +-3.4*10(-38乗)~+-3.4*10(38乗)");
+//     printf("double : 実数 : +-1.7*10(-308乗)~+=1.7*10(308乗)");
+//     printf("char : 文字 : -127~127");
+//     printf("演算において、型が表現できる値の上限を超えてしまうことをオーバーフローという。\n");
+//     printf("プログラムを作成するときは、最終的な計算結果のみではなく、\n");
+//     printf("式の評価の途中でオーバーフローなどが起こらないかを十分検討して\n各変数の型を決める必要がある。\n");
 
-    return 0;
-}
+//     return 0;
+// }
+
+
+// // 10.2 型変換
+// // 10.2.1 金剛演算の型変換
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int t = 20;
+//     int v0 = 14;
+//     double a = 2 + 0.80665;
+
+//     cout << v0 / 5 << endl;
+//     cout << v0 / 5.0 << endl;
+//     cout << v0 * t + (a * t * t) / 2 << endl;
+
+//     return 0;
+// }
+
+// // 10.2.2 代入演算の型変換
+// // 10.4 : 代入演算での型変換
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     double GPA = 4.98;
+//     int grade;
+
+//     grade = GPA;
+
+//     cout << "grade = " << grade << endl;
+
+//     return 0;
+// }
+
+// 10.2.3 キャスト演算
+// 10.5 : キャスト演算
