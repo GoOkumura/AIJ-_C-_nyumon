@@ -1279,3 +1279,96 @@
 
 //     return 0;
 // }
+
+
+// // 12 配列
+// // 12.1 配列
+// // 12.1 : 配列の要素の合計を求める
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int day[7] = {3, 4, 2, 1, 8, 2, 0};
+//     int sum = 0;
+//     for ( int i = 0; i < 7; i++){
+//         cout << day[i] << " ";
+//         sum += day[i];
+//     }
+//     cout << "\n" << sum << endl;
+
+//     return 0;
+// }
+
+// // 12.2 演習問題(1)
+// // A ; Reversing Numbers 154 - 234
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n, A[100];
+//     cin >> n;
+//     for (int i = 0; i < n; i++) cin >> A[i];
+
+//     for ( int i = n-1; i >=0; i--){
+//         if (i != n-1) cout << " ";
+//         cout << A[i];
+//     }
+//     cout << endl;
+
+//     return 0;
+// }
+
+// 12.3 多次元配列
+// 12.4 : 二次元配列の初期化と出力
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int month[5][7];
+    
+//     for (int i = 0; i < 5; i++){
+//         for ( int j = 0; j < 7; j++){
+//             month[i][j] = (i == 2 || j >= 5)?0:1;
+//         }
+//     } 
+    
+//     for ( int i = 0; i < 5; i++){
+//         for (int j = 0; j < 7; j++){
+//             cout << " " << month[i][j];
+//         }
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
+
+// 12.3.1 多次元配列の〜
+#include<iostream>
+using namespace std;
+int main(){
+    // 12.3.1 多次元配列の宣言
+    printf("多次元配列の宣言\n");
+    printf("型 配列変数名[縦方向のサイズ][横方向のサイズ]\n");
+    printf("\n");
+    // 12.3.2 多次元配列要素へのアクセス
+    printf("多次元配列要素へのアクセス\n");
+    printf("配列変数名[縦方向の添字][横方向の添字]\n");
+    printf("\n");
+    // 12.3.3 多次元配列の初期化
+    printf("型 配列変数名[定数n][定数m] = {\n");
+    printf("     {要素(0, 0), 要素(0, 1),....,要素(0, m-1))}\n");
+    printf("     {要素(1, 0), 要素(1, 1),....,要素(1, m-1))}\n");
+    printf("     {要素(n-1, 0), 要素(n-2, 1),....,要素(n-1, m-1))}\n");
+    printf("     }\n");
+    printf("\n");
+
+    int month[5][7] = {
+        {3, 4, 2, 1, 1, 8, 2},
+        {3, 3, 2, 2, 2, 3, 1},
+        {1, 1, 3, 5, 5, 2, 1},
+        {1, 7, 3, 6, 8, 8, 9},
+        {2, 3, 3, 0, 0, 0, 0}
+    };
+
+    return 0;
+}
