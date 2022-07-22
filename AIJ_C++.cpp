@@ -1175,3 +1175,107 @@
 //     return 0;
 // }
 
+// // 11.3 演習問題
+// // A : Print a Rectangle 143
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int H, W;
+//     while(1){
+//         cin >> H >> W;
+//         if ( H == 0 && W == 0) break;
+
+//         for (int i = 0; i < H; i++){
+//             for ( int j = 0; j < W; j++){
+//                 cout << "#";
+//             }
+//             cout << "\n";
+//         }
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
+
+// // B Print a Flame 145
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int H, W;
+
+//     while(1){
+//         cin >> H >> W;
+//         if ( H == 0 && W == 0) break;
+
+//         for ( int i = 0; i < H; i++ ){
+//             for ( int j = 0; j < W; j++ ){
+//                 if ( i == 0 || i == H-1 || j == 0 || j == W-1 ){
+//                     cout << "#";
+//                 } else {
+//                     cout << ".";
+//                 }
+//             }
+//             cout << "\n";
+//         }
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
+
+// // C * Print a Chessboard 146
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int H, W;
+
+//     while(1){
+//         cin >> H >> W;
+//         if ( H == 0 && W == 0 ) break;
+
+//         for ( int i = 0; i < H; i++){
+//             for ( int j = 0; j < W; j++ ) {
+//                 if ( (i + j) % 2 == 0){
+//                     cout << "#";
+//                 } else {
+//                     cout << ".";
+//                 }
+//             }
+//             cout << "\n";
+//         }
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
+
+// // D : Structured Programming 147
+// #include<iostream>
+// using namespace std;
+
+// // 3のつく数字ならtrue
+// bool has3(int x){
+//     while(x){
+//         if ( x % 10 == 3) return true;
+//         x /= 10;
+//     }
+//     return false;
+// }
+
+// void call(int n){
+//     for ( int x = 1; x <= n; x++ ){
+//         if ( x % 3 == 0 || has3(x) ){
+//             cout << " " << x;
+//         }
+//     }
+//     cout << endl;
+// }
+
+// int main(){
+//     int n;
+//     cin >> n;
+//     call(n);
+
+//     return 0;
+// }
