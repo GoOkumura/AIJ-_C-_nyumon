@@ -1343,32 +1343,41 @@
 // }
 
 // 12.3.1 多次元配列の〜
-#include<iostream>
-using namespace std;
-int main(){
-    // 12.3.1 多次元配列の宣言
-    printf("多次元配列の宣言\n");
-    printf("型 配列変数名[縦方向のサイズ][横方向のサイズ]\n");
-    printf("\n");
-    // 12.3.2 多次元配列要素へのアクセス
-    printf("多次元配列要素へのアクセス\n");
-    printf("配列変数名[縦方向の添字][横方向の添字]\n");
-    printf("\n");
-    // 12.3.3 多次元配列の初期化
-    printf("型 配列変数名[定数n][定数m] = {\n");
-    printf("     {要素(0, 0), 要素(0, 1),....,要素(0, m-1))}\n");
-    printf("     {要素(1, 0), 要素(1, 1),....,要素(1, m-1))}\n");
-    printf("     {要素(n-1, 0), 要素(n-2, 1),....,要素(n-1, m-1))}\n");
-    printf("     }\n");
-    printf("\n");
+// 
 
-    int month[5][7] = {
-        {3, 4, 2, 1, 1, 8, 2},
-        {3, 3, 2, 2, 2, 3, 1},
-        {1, 1, 3, 5, 5, 2, 1},
-        {1, 7, 3, 6, 8, 8, 9},
-        {2, 3, 3, 0, 0, 0, 0}
-    };
+// // 12.4 演習問題(2)
+// // B : Finding Missing Cards 158
+// #include<iostream>
+// using namespace std;
 
-    return 0;
-}
+// int main(){
+//     bool cards[4][14];
+//     int n, rank;
+//     char suit;
+
+//     for ( int s =0; s < 4; s++ )
+//         for ( int r = 1; r <= 13; r++ )
+//             cards[s][r] = 0;
+
+//     cin >> n;
+//     for ( int i = 0; i < n; i++ ){
+//         cin >> suit >> rank;
+//         if ( suit == 'S' ) cards[0][rank] = 1;
+//         if ( suit == 'H' ) cards[0][rank] = 1;
+//         if ( suit == 'C' ) cards[0][rank] = 1;
+//         if ( suit == 'D' ) cards[0][rank] = 1;
+//     }
+
+//     for ( int  s = 0; s < 4; s++ ){
+//         for ( int r = 1; r < 13; r++ ){
+//             if ( cards[s][r] ) continue;
+//             if ( s == 0 ) suit = 'S';
+//             if ( s == 1 ) suit = 'H';
+//             if ( s == 2 ) suit = 'C';
+//             if ( s == 3 ) suit = 'D';
+//             cout << suit << " " << r << endl;
+//         }
+//     }
+
+//     return 0;
+// }
