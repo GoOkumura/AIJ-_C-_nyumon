@@ -1355,7 +1355,7 @@
 //     int n, rank;
 //     char suit;
 
-//     for ( int s =0; s < 4; s++ )
+//     for ( int s = 0; s < 4; s++ )
 //         for ( int r = 1; r <= 13; r++ )
 //             cards[s][r] = 0;
 
@@ -1363,9 +1363,9 @@
 //     for ( int i = 0; i < n; i++ ){
 //         cin >> suit >> rank;
 //         if ( suit == 'S' ) cards[0][rank] = 1;
-//         if ( suit == 'H' ) cards[0][rank] = 1;
-//         if ( suit == 'C' ) cards[0][rank] = 1;
-//         if ( suit == 'D' ) cards[0][rank] = 1;
+//         if ( suit == 'H' ) cards[1][rank] = 1;
+//         if ( suit == 'C' ) cards[2][rank] = 1;
+//         if ( suit == 'D' ) cards[3][rank] = 1;
 //     }
 
 //     for ( int  s = 0; s < 4; s++ ){
@@ -1378,6 +1378,62 @@
 //             cout << suit << " " << r << endl;
 //         }
 //     }
+
+//     return 0;
+// }
+
+// // C : Official House 160
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int A[5][4][11], n;
+//     for ( int i = 1; i < 4; i++ ){
+//         for ( int j = 1; j <= 3; j++ ){
+//             for ( int k = 1; k <= 10; k ++ ) A[i][j][k] = 0;
+//         }
+//     }
+
+//     cin >> n;
+//     for (int i = 0; i < n; i++ ) {
+//         int b, f, r, v;
+//         cin >> b >> f >> r >> v;
+//         A[b][f][r] += v;
+//     }
+
+//     for ( int f = 1; f <= 4; f++ ){
+//         if ( f > 1 ) cout << "####################\n";
+//         for ( int b = 1; b <= 3; b++ ){
+//             for ( int r = 1; r <= 10; r++ ){
+//                 cout << " " << A[f][b][r];
+//             }
+//             cout << endl;
+//         }
+//     }
+
+//     return 0;
+// }
+
+// // D : Matrix Vector Mutiplication 162
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n, m, A[100][100], b[100], c[100];
+
+//     cin >> n >> m;
+//     for (int i = 0; i < n; i++ )
+//         for ( int j = 0; j < m; j++) cin >> A[i][j];
+//     for ( int i = 0; i < m; i++ ) cin >> b[i];
+
+//     for (int i = 0; i < n; i++ ){
+//         c[i] = 0;
+//         for ( int j = 0; j < m; j++ ){
+//             c[i] += A[i][j]*b[j];
+//         }
+//     }
+
+//     for ( int i = 0; i < n; i++ ) cout << c[i] << endl;
 
 //     return 0;
 // }
