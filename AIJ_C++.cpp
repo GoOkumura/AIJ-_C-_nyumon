@@ -1437,3 +1437,135 @@
 
 //     return 0;
 // }
+
+// 12.5 演習問題(3)
+// A : Grading
+// #include<iostream>
+// using namespace std;
+
+// char getGrade(int m, int f, int r){
+//     int sum = m +f ;
+//     char grade;
+//     if ( m == -1 || f == -1 ){
+//         grade = 'F';
+//     } else if ( 80 <= sum ){
+//         grade = 'A';
+//     } else if ( 65 <= sum && sum < 80 ){
+//         grade = 'B';
+//     } else if ( 50 <= sum && sum < 65 ){
+//         grade = 'C';
+//     } else if ( 30 <= sum && sum < 50 ){
+//         if ( 50 <= r ) grade = 'C';
+//         else grade = 'D';
+//     } else if ( sum < 30 ){
+//         grade = 'F';
+//     }
+
+//     return grade;
+// }
+
+// int main(){
+//     int m, f, r;
+//     while(1){
+//         cin >> m >> f >> r;
+//         if ( m == -1 && f == -1 && r == -1 ) break;
+//         cout << getGrade(m, f, r) << endl;
+//     }
+
+//     return 0;
+// }
+
+// // B : How many ways?
+// #include<iostream>
+// using namespace std;
+
+// int count(int n, int x){
+//     int cnt = 0;
+//     for (  int i = 1; i <= n-2; i++ ){
+//         for ( int j = i+1; j <= n-1; j++ ){
+//             for ( int k = j+1; k <= n; k++ ){
+//                 if ( i + j + k == x) cnt++;
+//             }
+//         }
+//     }
+//     return cnt;
+// }
+
+// int main(){
+//     int n, x;
+
+//     while(1){
+//         cin >> n >> x;
+//         if ( n == 0 && x == 0 ) break;
+//         cout << count (n, x) << endl; 
+//     }
+
+//     return 0;
+// }
+
+// // C : Spreadsheet 166 - 240
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int T[100][101], r, c;
+
+//     cin >> r >> c;
+//     for  ( int i = 0; i < r; i++)
+//         for ( int j = 0; j < c; j++ ) cin >> T[i][j];
+    
+//     for ( int i = 0; i <= r; i++ ) T[i][c] = 0;
+//     for ( int j = 0; j <= c; j++ ) T[r][j] = 0;
+
+//     for ( int i = 0; i < r; i++ ){
+//         for ( int j = 0; j < c; j++ ){
+//             T[i][c] += T[i][j];
+//             T[r][j] += T[i][j];
+//             T[r][c] += T[i][j];
+//         }
+//     }
+
+//     for ( int i = 0; i <= r; i++ ){
+//         for ( int j = 0; j <= c; j++ ){
+//             if ( j ) cout << " ";
+//             cout << T[i][j];
+//         }
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
+
+// // D : Matrix Multiplication 167 - 241
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n, m, l;
+//     long long A[100][100], B[100][100], C[100][100];
+
+//     cin >> n >> m >> l;
+//     for ( int i = 0; i < n; i++ )
+//         for ( int j = 0; j < m; j++ ) cin >> A[i][j];
+//     for ( int i = 0; i < m; i++)
+//         for ( int j = 0; j < l; j++ ) cin >> B[i][j];
+    
+//     for ( int i = 0; i < n; i++ ){
+//         for ( int j = 0; j < l ; j++ ){
+//             C[i][j] = 0;
+//             for ( int k = 0; k < m; k++ ){
+//                 C[i][j] += A[i][k]*B[k][j];
+//             }
+//         } 
+//     }
+
+//     for ( int i = 0; i < n; i++ ){
+//         for ( int j = 0; j < l; j++ ){
+//             if ( j ) cout << " ";
+//             cout << C[i][j];
+//         }
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
