@@ -1569,3 +1569,107 @@
 
 //     return 0;
 // }
+
+// // 13 文字列
+// // 13.1 文字
+// // 13.1.1 文字とアスキーコード
+// // 13.1 : 文字とアスキーコードの表示
+// #include<iostream>
+
+// int main(){
+//     char ch = 'A';
+//     printf("%c = %d\n", ch, ch);
+
+//     int num = 122;
+//     printf("%c = %d\n", num, num);
+
+//     printf("v%c%c%c%c%cv\n", 40, 94, 95, 94, 41);
+
+//     return 0;
+// }
+
+// // 13.1.2 文字の関数
+// // 13.2 : 文字の種類の判定
+// #include<iostream>
+// #include<cctype>
+// using namespace std;
+
+// int main(){
+//     char ch;
+//     cin >> ch;
+
+//     cout << ch << " is ";
+//     if ( !isalpha(ch) ) cout << "not ";
+//     cout << "alphabet." << endl;
+
+//     cout << ch << " is ";
+//     if ( !isdigit(ch) ) cout << "not ";
+//     cout << "digit." << endl;
+
+//     printf("int isalpha(int ch) = chがアルファベットならtrueを返す\n");
+//     printf("int isdigit(int ch) = chが数字ならtrueを返す\n");
+//     printf("int islower(int ch) = chが小文字ならtrueを返す\n");
+//     printf("int isupper(int ch) = chが大文字ならtrueを返す\n");
+//     printf("int tolower(int ch) = chの小文字を返す\n");
+//     printf("int toupper(int ch) = chの大文字を返す\n");
+
+//     return 0;
+// }
+
+// // 13.2 演習問題
+// // A : Toggling Cases 174 - 242
+// #include<cstdio>
+// #include<cctype>
+// using namespace std;
+// int main(){
+//     char ch;
+    
+//     while(1){
+//         scanf("%c", &ch);
+//         if ( isalpha(ch) ){
+//             if ( islower(ch) ) printf("%c", toupper(ch));
+//             else printf("%c", tolower(ch));
+//         } else printf("%c", ch);
+
+//         if (ch == '\n') break;
+//     }
+
+//     return 0;
+// }
+
+// // 13.3 char型配列による文字列
+// #include<cstdio>
+
+// int main(){
+//     char name[9] = "Rose";
+
+//     scanf("%s", name);
+//     printf("Myname is %s.\n", name);
+
+//     return 0;
+// }
+
+// // 13.3.5 文字列の基本操作
+// // 13.4 : 文字列要素へのアクセス
+// #include<cstdio>
+// #include<cctype>
+
+// int main(){
+//     char city[20] = "Aizu-Wakamatsu";
+
+//     printf("%c\n", city[1]);
+
+//     int i = 0;
+//     while ( city[i] ){
+//         printf("%c", toupper(city[i]));
+//         i++;
+//     }
+//     printf("\n");
+
+//     city[2] = 'd';
+//     city[4] = '\n';
+
+//     printf("%s\n", city);
+
+//     return 0;
+// }
