@@ -1743,3 +1743,46 @@
 
 //     return 0;
 // }
+
+// // C : Counting Characters 182 - 244
+// #include<iostream>
+// #include<cstdio>
+// #include<cctype>
+// using namespace std;
+
+// int main(){
+//     char ch;
+//     int cnt[26] = {};
+
+//     while( cin >> ch ){
+//         ch = tolower(ch);
+//         if ( isalpha(ch) ){
+//             cnt[ch-'a']++;
+//         }
+//     }
+
+//     for ( int i = 0; i < 26; i++ ){
+//         printf("%c : %d\n", i+'a', cnt[i]);
+//     }
+
+//     return 0;
+// }
+
+// // D : Ring 184 - 244
+// #include<cstdio>
+// #include<cstring>
+
+// int main(){
+//     char s[201], t[101], p[101];
+
+//     scanf("%s %s", s, p);
+//     strcpy(t, s);
+//     strcat(s, t);
+
+//     if ( strstr(s, p) == NULL ) printf("No\n");
+//     else printf("Yes\n");
+
+//     return 0;
+// }
+
+// 13.5 stringクラスによる文字列
