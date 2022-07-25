@@ -1673,3 +1673,73 @@
 
 //     return 0;
 // }
+
+// // 13.3.6 文字列の関数
+// // 13.5 : 文字列の検索
+// #include<cstdio>
+// #include<cstring>
+// using namespace std;
+
+// int main(){
+//     char s1[100], s2[100];
+
+//     scanf("%s %s", s1, s2);
+
+//     if ( strstr(s1, s2) == NULL ) printf("No\n");
+//     else printf("Yes\n");
+
+//     printf("int strlen(cahr[] str) = 文字列strの長さを返す\n");
+//     printf("char[] strcpy(char[] s1, char[] s2) = 文字列s1に文字列s2をコピーする\n");
+//     printf("char[] strcat(char[] s1, char[] s2) = 文字列s1に文字列s2を連結する\n");
+//     printf("char[] strstr(char[: s1, char[] s2) = 文字列s1からs2を探す\n");
+//     printf("int strcmp(char[] s1, char[] s2) = 文字列s1と文字列s2を比較する\n");
+//     printf("s1<s2の時は負の値、s1=s2の時は0、s1>s2の時は正の値を返す\n");
+
+//     return 0;
+// }
+
+// // 13.6 : 文字列の連結とコピー
+// #include<cstdio>
+// #include<cstring>
+
+// int main(){
+//     char str1[100], str2[100], str3[100];
+
+//     scanf("%s %s", str1, str2); // 2つの文字列を読み込む
+
+//     printf("%s (%d)\n", str1, strlen(str1)); // 文字列の長さを出力する
+//     printf("%s (%d)\n", str2, strlen(str2)); // 文字列の長さを出力する
+
+//     strcat (str1, str2); // 文字列str1に文字列str2を連結する
+//     printf("%s\n", str1);
+
+//     strcpy(str3, str1); // 文字列str1の内容を文字列str3にコピーする
+
+//     if ( strcmp(str1, str3) == 0 ){ // 文字列を比較する
+//         printf("%s = %s\n", str1, str3);
+//     }
+    
+//     return 0;
+// }
+
+// // 13.4 演習問題(2)
+// // B : Sum of Numbers 181 - 243
+// #include<cstdio>
+// #include<cstring>
+
+// int main(){
+//     char str[1001];
+
+//     while(1){
+//         scanf("%s", str);
+//         if ( str[0] == '0' ) break;
+//         int sum = 0;
+//         for ( int i =0; i < strlen(str); i++ ){
+//             sum += (str[i]-'0');
+//         }
+
+//         printf("%d\n", sum);
+//     }
+
+//     return 0;
+// }
