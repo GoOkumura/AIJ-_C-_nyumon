@@ -1785,4 +1785,169 @@
 //     return 0;
 // }
 
-// 13.5 stringクラスによる文字列
+// // 13.5 stringクラスによる文字列
+// // 13.7 : 文字列の入出力
+// #include<iostream>
+// #include<string>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     string color = "black";
+
+//     color = "white";
+
+//     cin >> n;
+//     for (int i = 1; i <= n; i++){
+//         cin >> color;
+//         cout << i << ": " << color << endl;
+//     }
+
+//     return 0;
+// }
+
+// // 13.5.4 文字列の基本操作
+// // 13.8 : 文字列を大文字にして出力する
+// #include<iostream>
+// #include<cctype>
+// #include<string>
+// using namespace std;
+
+// int main(){
+//     string greeting = "Hello";
+
+//     for ( int i = 0; i < greeting.size(); i++ ){
+//         cout << greeting[i];
+//         greeting[i] = toupper(greeting[i]);
+//     }
+//     cout << "\n";
+//     cout << greeting << endl;
+
+//     return 0;
+// }
+
+// // 13.9 : 文字列の比較 (辞書順を基準に行われる)
+// #include<iostream>
+// #include<string>
+// using namespace std;
+
+// int main(){
+//     string str1, str2;
+//     cin >> str1 >> str2;
+
+//     cout << str1;
+//     if ( str1 == str2 ) cout << " == ";
+//     else if ( str1 < str2 ) cout << " < " ;
+//     else if ( str1 > str2 ) cout << " > ";
+//     cout << str2 << endl;
+
+//     return 0;
+// }
+
+// // 13.10 : 文字列の連結・追加
+// #include<iostream>
+// #include<string>
+// using namespace std;
+
+// int main(){
+//     string name, name2;
+
+//     cin >> name >> name2;
+
+//     name = "Mt. " + name + " ";
+//     name2 += '.';
+
+//     cout << name << name2 << endl;
+
+//     return 0;
+// }
+
+// // 13.4 : stringの主な演算
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     printf("size() : 文字数を返す\n");
+//     printf("insert() : (指定した場所に)文字・文字列を挿入する\n");
+//     printf("erase() : (指定した場所の)文字・文字列を削除する\n");
+//     printf("clear() : すべての文字を削除する\n");
+//     printf("substr() : 文字列の(指定した)部分文字列を返す\n");
+//     printf("replace() : (指定した)部分文字列を新しい文字列に置換する\n");
+
+//     return 0;
+// }
+
+// // 13.11 : 文字列の連結・挿入
+// #include<iostream>
+// #include<string>
+// using namespace std;
+
+// int main(){
+//     string nation, zip, address;
+//     address = "";
+
+//     cin >> nation >> zip;
+
+//     address = zip + nation;
+//     address.insert( zip.size(), "," );
+
+//     cout << address << endl;
+
+//     return 0;
+// }
+
+// // 13.12 : 部分文字列の置換
+// #include<iostream>
+// #include<string>
+// using namespace std;
+
+// int main(){
+//     string numbers = "0123456789";
+//     string sub, rep;
+
+//     cout <<  numbers.size() << endl;
+
+//     sub = numbers.substr(3, 5);
+//     cout << sub << endl;
+
+//     rep = numbers.replace(3, 4, "ABCD");
+//     cout << rep << endl;
+
+//     return 0;
+// }
+
+// // 13.6 演習問題(3)
+// // A : Finding a Word 193 - 245
+// #include<iostream>
+// #include<string>
+// #include<cctype>
+
+// using namespace std;
+
+// string toUpper( string s ){
+//     string t = s;
+//     for ( int i = 0; i < s.size(); i++){
+//         t[i] = toupper(s[i]);
+//     }
+//     return t;
+// }
+
+// int main(){
+//     string target, source;
+
+//     cin >> target;
+//     target = toUpper(target);
+
+//     int cnt = 0;
+
+//     while(1){
+//         cin >> source;
+//         if ( source == "END_OF_TEXT" ) break;
+//         source = toUpper(source);
+//         if ( target == source ) cnt++;
+//     }
+
+//     cout << cnt << endl;
+
+//     return 0;
+// }
