@@ -2122,3 +2122,63 @@
 
 //     return 0;
 // }
+
+// // C : Standard Deviation 203 - 250
+// #include<iostream>
+// #include<cstdio>
+// #include<cmath>
+// using namespace std;
+
+// int main(){
+//     int n, A[1000];
+
+//     while(1){
+//         cin >> n;
+//         if ( n == 0 ) break;
+
+//         for ( int i = 0; i < n; i++ ) cin >> A[i];
+//         int sum = 0;
+//         for ( int i = 0; i < n; i++ ) sum += A[i];
+//         double avg = 1.0*sum/n;
+//         double dist = 0.0;
+//         for ( int i =0; i < n; i++ ){
+//             dist += (avg-A[i])*(avg-A[i]);
+//         }
+    
+//     printf("%lf\n", sqrt(dist/n));
+//     }
+// }
+
+// // D : Distance2 203 - 251
+// #include<iostream>
+// #include<cstdio>
+// #include<cmath>
+// using namespace std;
+
+// int main(){
+//     int n, x[100], y[100];
+//     cin >> n;
+//     for ( int i = 0; i < n; i++ ) cin >> x[i];
+//     for ( int i = 0; i < n; i++ ) cin >> y[i];
+
+//     double d[4];
+//     for ( int i = 0; i < 4; i++ ) d[i] = 0.0;
+
+//     for ( int p = 1; p <=3; p++ ){
+//         for ( int i = 0; i < n; i++){
+//             d[p] += pow(fabs(x[i] - y[i]), p);
+//         }
+//         d[p] = pow(d[p], 1.0/p);
+//     }
+
+//     for ( int i = 0; i < n; i++ ){
+//         d[0] = (d[0] < fabs(x[i] - y[i])?fabs(x[i] - y[i]):d[0]);
+//     }
+
+//     printf("%lf\n", d[1]);
+//     printf("%lf\n", d[2]);
+//     printf("%lf\n", d[3]);
+//     printf("%lf\n", d[0]);
+
+//     return 0;
+// }
