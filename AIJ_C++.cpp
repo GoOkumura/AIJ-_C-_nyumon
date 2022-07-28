@@ -1951,3 +1951,174 @@
 
 //     return 0;
 // }
+
+// // B : Shuffle 194 - 246
+// #include<iostream>
+// #include<string>
+// #include<cctype>
+// using namespace std;
+
+// string shuffle(string str, int h ){
+//     string head = str.substr(0, h);
+//     string tail = str.substr(h, str.size()-h);
+//     return tail + head;
+// }
+
+// int main(){
+//     string cards;
+//     int m, h;
+
+//     while(1){
+//         cin >> cards;
+//         if ( cards == "-" ) break;
+
+//         cin >> m;
+//         for ( int i = 0; i < m; i++){
+//             cin >> h;
+//             cards = shuffle(cards, h);
+//         }
+//         cout << cards << endl;
+//     }
+
+//     return 0;
+// }
+
+// // C : Card Game 195 - 247
+// #include<iostream>
+// #include<string>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     string s1, s2;
+//     int a = 0, b = 0;
+//     cin >> n;
+
+//     for ( int i = 0; i < n; i++){
+//         cin >> s1 >> s2;
+//         if ( s1 > s2 ) a += 3;
+//         else if ( s1 < s2 ) b += 3;
+//         else {
+//             a++; b++;
+//         }
+//     }
+
+//     cout << a << " " << b << endl;
+
+//     return 0;
+// }
+
+// // D : Transformation 196 - 248
+// #include<iostream>
+// #include<string>
+// using namespace std;
+
+// int main(){
+//     string str, com, p;
+//     int q, a, b;
+
+//     cin >> str >> q;
+//     for ( int t =0; t < q; t++ ){
+//         cin >> com >> a >> b;
+//         if ( com == "print" ){
+//             cout << str.substr(a, b-a+1) << endl;
+//         } else if (com == "reverse" ){
+//             string tmp = str.substr(a, b-a+1);
+//             int n = tmp.size();
+//             for ( int i =0; i < n; i++ ) str [i+a] = tmp[n-i-1];
+//         } else if ( com == "replace" ){
+//             cin >> p;
+//             str = str.replace(a, b-a+1, p);
+//         }
+//     }
+
+//     return 0;
+// }
+
+
+// // 14 ライブラリ
+// // 14.1 数学関数
+// // 14.1 : 平方根を求める
+// #include<iostream>
+// #include<cmath>
+// using namespace std;
+
+// int main(){
+//     int x;
+//     cin >> x;
+//     cout << sqrt(x) << endl;
+
+//     return 0;
+// }
+
+// // 14.2 : 正弦・余弦を求める
+// #include<iostream>
+// #include<cstdio>
+// #include<cmath>
+// using namespace std;
+
+// int main(){
+//     int deg;
+//     double rad;
+//     double PI = acos(-1); // PI = 3.141593....
+
+//     cin >> deg;
+//     rad = deg * PI / 180;
+
+//     printf("%d degree = %lf randian\n", deg, rad);
+//     printf("cos(%d) = %lf, sin(%d = %lf\n", deg, cos(rad), deg, sin(rad));
+
+//     return 0;
+// }
+
+// // cmathに含まれる主な数学関数
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     printf("double sqrt(double x) : xの平方根を返す。\n");
+//     printf("double pow(double x, double n) : xのn乗を返す。\n");
+//     printf("double fabs(double x) : xの絶対値を返す。\n");
+//     printf("double sin(double x) : sine(正弦)を返す。引数の単位はラジアン。\n");
+//     printf("double cos(double x) : cosine(余弦)を返す。日k数の単位はラジアン。\n");
+//     printf("double log(double x) : xの自然対数を返す。\n");
+//     printf("double log10(double x) : xの常用対数を返す。");
+
+//     return 0;
+// }
+
+// // 14.2 演習問題
+// // A : Distance 201 - 249
+// #include<iostream>
+// #include<cmath>
+// #include<cstdio>
+// using namespace std;
+
+// int main(){
+//     double x1, y1, x2, y2;
+//     cin >> x1 >> y1 >> x2 >> y2;
+//     double d = sqrt( (x1-x2)*(x1-x2) + (y1-y2)*(y1- y2));
+//     printf("%lf\n", d);
+
+//     return 0;
+// }
+
+// // B : Triangle 202 - 249
+// #include<iostream>
+// #include<cstdio>
+// #include<cmath>
+// using namespace std;
+
+// int main(){
+//     int a, b, C;
+//     double S, L, h, d;
+//     cin >> a >> b >> C;
+
+//     d = (acos(-1.0)*C)/180.0;
+//     S = a * b * sin(d) / 2.0;
+//     L = a + b + sqrt(a*a + b*b - 2*a*b*cos(d));
+//     h = b*sin(d);
+
+//     printf("%lf\n%lf\n%lf\n", S, L, h);
+
+//     return 0;
+// }
