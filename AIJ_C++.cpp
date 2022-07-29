@@ -2182,3 +2182,87 @@
 
 //     return 0;
 // }
+
+
+// 15 構造体とクラス
+// 15.1 構造体
+// 15.1.1 構造体の定義
+
+// 15.1 : 学生を表す変数
+// string name;
+// int id;
+// int age;
+// string e_mail;
+// double GPA;
+// 15.2 : 複数の学生を表す変数
+// string name[1000];
+// int id[1000];
+// int age[1000];
+// string e_mail[1000];
+// double GPA[1000];
+// 15.3 : 学生を表す構造体
+// struct Student{
+//     string name;
+//     int id;
+//     int age;
+//     string e_mail;
+//     double GPA;
+// };
+// 15.4 : 1人の学生を表す変数の宣言
+// Student student;
+// 15.5 : 複数の学生を管理する構造体の配列の宣言
+// Studen students[1000];
+
+// // 15.1.2 構造体の使用
+// // 15.6 : 構造体のメンバ変数にアクセスする
+// #include<iostream>
+// #include<string>
+// using namespace std;
+
+// struct Student{
+//     string name;
+//     int id;
+// };
+
+// int main(){
+//     Student student;
+//     student.id = 2014;
+//     student.name = "wakamatsu";
+
+//     cout << student.id << " " << student.name << endl;
+
+//     return 0;
+// }
+
+// // 15.1.3 構造体の配列
+// // 15.7 : 構造体変数の配列
+// #include<iostream>
+// #include<string>
+// using namespace std;
+
+// struct Student{
+//     string name;
+//     int id, age;
+//     string e_mail;
+//     double GPA;
+// };
+
+// void printStudent(Student st){
+//     cout << st.name << " " << st.GPA << endl;
+// }
+
+// int main(){
+//     int n;
+//     Student S[1000];
+
+//     cin >> n;
+
+//     for ( int i = 0; i < n; i++ ){
+//         cin >> S[i].name >> S[i].id;
+//         cin >> S[i].age >> S[i].e_mail >> S[i].GPA;
+//     }
+
+//     for ( int i = 0; i < n; i++ ) printStudent(S[i]);
+
+//     return 0;
+// }
