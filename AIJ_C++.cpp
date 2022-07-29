@@ -2266,3 +2266,158 @@
 
 //     return 0;
 // }
+
+// // 15.2 クラス
+// // 15.2.1 クラスの定義
+// // 15.8 : 2点間の距離を求める(クラスを用いた実装)
+// #include<iostream>
+// #include<cmath>
+// using namespace std;
+
+// class Point{
+//     public:
+//     double x, y;
+
+//     Point(double xx, double yy){
+//         x = xx;
+//         y = yy;
+//     }
+// };
+
+// double getDistance(Point p1, Point p2){
+//     return sqrt(pow(p1.x - p2.x, 2) + pow(p1.y - p2.y, 2));
+// }
+
+// int main (){
+//     Point p1(0, 0), p2(0, 0);
+
+//     cin >> p1.x >> p1.y >> p2.x >> p2.y;
+
+//     cout << getDistance (p1, p2) << endl;
+
+//     return 0;
+// }
+
+// // 15.9 : ロボットのシミュレーション
+// #include<iostream>
+// #include<string>
+// #include<cmath>
+// using namespace std;
+
+// class Robot{
+//     public:
+//     int x, y, energy;
+//     string name;
+
+//     Robot(string n, int xx, int yy){
+//         name = n;
+//         x = xx;
+//         y = yy;
+//         energy = 100;
+//     }
+
+//     void move(int dx, int dy){
+//         x += dx;
+//         y += dy;
+//         energy -= abs(dx) + abs(dy);
+//     }
+
+//     void print(){
+//         cout << name << "is at (" << x << ", " << y << ") with" << energy << endl;
+//     }
+// };
+
+// int main(){
+//     Robot r1("Rose", 10, 10), r2("Mary", 0, 0);
+
+//     r1.move(1, 3);
+//     r1.move(0, 2);
+//     r2.move(3, 5);
+//     r1.print();
+//     r1.move(3, -1);
+//     r2.move(4, 2);
+//     r2.print();
+//     r1.move(-7, 3);
+//     r1.print();
+
+//     return 0;
+// }
+
+// // A : Dice 1 216 - 252
+// #include<iostream>
+// using namespace std;
+
+// class Cube{
+//     public:
+//     int f[6];
+//     Cube(){}
+//     void roll_z(){roll(1, 2, 4, 3);} //
+//     void roll_y(){roll(0, 2, 5, 3);} // to W
+//     void roll_x(){roll(0, 1 ,5, 4);} // to N
+//     void roll(int i, int j, int k, int l){
+//         int t = f[i]; f[i] = f[j]; f[j] = f[k]; f[k] = f[l]; f[l] = t;
+//     }
+//     void move (char ch){
+//         if ( ch == 'E' ) for (int i = 0; i < 3; i++ ) roll_y();
+//         if ( ch == 'W' ) roll_y();
+//         if ( ch == 'N' ) roll_x();
+//         if ( ch == 'S' ) for (int i = 0; i < 3; i++ ) roll_x();
+//     }
+// };
+
+// int main(){
+//     Cube c;
+//     string com;
+
+//     for ( int i = 0; i < 6; i++ ) cin >> c.f[i];
+//     cin >> com;
+
+//     for (int i = 0; i < com.size(); i++ ) c.move (com[i]);
+
+//     cout << c.f[0] << endl;
+
+//     return 0;
+// }
+
+// // B : Dice 2 218 - 253
+// #include<iostream>
+// using namespace std;
+
+// class Cube{
+//     public:
+//     int f[6];
+//     Cube(){}
+//     void roll_z(){roll(1, 2, 4, 3);} //
+//     void roll_y(){roll(0, 2, 5, 3);} // to W
+//     void roll_x(){roll(0, 1 ,5, 4);} // to N
+//     void roll(int i, int j, int k, int l){
+//         int t = f[i]; f[i] = f[j]; f[j] = f[k]; f[k] = f[l]; f[l] = t;
+//     }
+// };
+
+// int getRight( Cube c1, int f1, int f2 ){
+//     for ( int i = 0; i < 6; i++ ){
+//         for ( int j = 0; j < 4; j++ ){
+//             if ( c1.f[0] == f1 && c1.f[1] == f2) return c1.f[2];
+//             c1.roll_z();
+//         }
+//         if ( i % 2 == 0 ) c1.roll_y();
+//         else c1.roll_x();
+//     }
+//     return -1;
+// }
+
+// int main(){
+//     Cube c;
+//     int f1, f2;
+
+//     for ( int i = 0; i < 6; i++ ) cin >> c.f[i];
+//     int q; cin >> q;
+
+//     for ( int i = 0; i < q; i++ ){
+//         cin >> f1 >> f2;
+//         cout << getRight (c, f1, f2) << endl;
+//     }
+    
+//     return 0;
+// }
